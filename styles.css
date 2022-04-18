@@ -1,6 +1,7 @@
  * {
      padding: 0;
      margin: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
  
  .header {
@@ -40,6 +41,8 @@
      font-size: 13px;
      color: #fff;
      display: inline-block;
+     padding: 10px;
+     cursor: pointer;
  }
  
  .nav-links ul li a::after {
@@ -71,7 +74,7 @@
  }
  
  .text-box p {
-     font-size: 14px;
+     font-size: 16px;
      color: #fff;
      margin: 10px 0 40px;
  }
@@ -130,22 +133,28 @@
      width: 80%;
      margin: auto;
      text-align: center;
-     padding-top: 100px;
+     padding-top: 20px;
  }
  
  h1 {
      font-weight: 600;
      font-size: 36px;
+     padding: 20px;
  }
  
  p {
+     margin-top: 10px;
      font-size: 20px;
      font-weight: 300px;
      padding: 10px;
      line-height: 20px;
+     padding: 20px;
+     letter-spacing: 0.05rem;
  }
  
  .row {
+     padding: 20px;
+     margin-top: 20px;
      margin: top;
      display: flex;
      justify-content: space-between;
@@ -154,9 +163,9 @@
  .courses-col {
      flex-basis: 31%;
      background: lightcyan;
-     padding: 20px 12px;
+     padding: 20px 0px;
      border-radius: 10px;
-     margin-bottom: 5%;
+     margin-bottom: 10px;
      transition: 0.5s;
  }
  
@@ -167,7 +176,7 @@
  }
  
  .courses-col:hover {
-     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.7);
  }
  
  @media(max-width: 700px) {
@@ -180,13 +189,13 @@
      width: 80%;
      margin: auto;
      text-align: center;
-     padding: 50px;
+     padding: 20px;
  }
  
  .campus-col {
      overflow: hidden;
      position: relative;
-     margin-bottom: 30px;
+     margin-bottom: 10px;
      border-radius: 10px;
      flex-basis: 32%;
      transition: 1s;
@@ -233,12 +242,13 @@
      width: 80%;
      margin: auto;
      text-align: center;
-     padding: 50px;
+     padding: 20px;
  }
  
  .facilities-col {
      flex-basis: 31%;
      border-radius: 10px;
+     padding: 10px;
  }
  
  .facilities-col img {
@@ -247,20 +257,21 @@
  }
  
  .facilities-col p {
-     padding: 0px;
+     padding: 10px;
  }
  
  .facilities-col h3 {
      margin-top: 16px;
      margin-bottom: 15px;
      text-align: center;
+     padding: 10px;
  }
  
  .testimonials {
      width: 80%;
      margin: auto;
      text-align: center;
-     padding-top: 50px;
+     padding-top: 10px;
  }
  
  .testimonials-col {
@@ -328,40 +339,6 @@
      }
  }
  
- .footer {
-     width: 100%;
-     text-align: center;
-     padding: 30px 0;
- }
- 
- .footer h4 {
-     margin-top: 20px;
-     margin-bottom: 20px;
-     font-weight: 600;
-     color: #fff;
-     font-size: large;
- }
- 
- .footer p {
-     color: #fff;
- }
- 
- .footer {
-     background-color: #333;
-     overflow: hidden;
- }
- 
- .footer a {
-     text-decoration: none;
-     padding: 20px;
-     text-align: center;
-     color: white;
- }
- 
- .icon {
-     margin-top: 20px;
- }
- 
  @media(max-width:700px) {
      .footer h4 {
          font-size: 25px;
@@ -423,6 +400,10 @@
      padding: 20px;
  }
  
+ .aboutcourses p {
+     padding: 20px;
+ }
+ 
  .about-courses-col {
      flex-basis: 31%;
      margin: 20px;
@@ -431,10 +412,11 @@
      transition: 0.5s;
      cursor: pointer;
      border-radius: 10px;
+     padding: 10px;
  }
  
  .about-courses-col:hover {
-     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
  }
  
  .blog {
@@ -446,25 +428,32 @@
      flex-basis: 45%;
      margin: 20px;
      width: 80%;
+     padding: 20px;
  }
  
- .blog-col p {
-     margin-top: 15px;
-     margin-bottom: 15px;
-     text-align: left;
+ .blog-col h3 {
+     padding: 10px;
+     margin-top: 10px;
+     font-size: 22px;
  }
  
- .blog-col ol {
+ .blog-col ul {
+     font-size: 20px;
      text-align: left;
      margin: auto;
-     margin-top: 20px;
+     margin-top: 10px;
+     padding: 20px;
  }
  
  .comment-box {
      border: 1px solid black;
-     margin: 10px;
-     padding: 10px 20px;
-     margin-top: 20px;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 50%;
+     margin: 20px auto;
  }
  
  .comment-box h3 {
@@ -474,10 +463,11 @@
  .comment-box input,
  .comment-box textarea {
      margin: 10px;
-     padding: 10px 15px;
+     padding: 20px;
+     font-size: 16px;
      box-sizing: border-box;
      background: #f0f0f0;
-     width: 100%;
+     width: 85%;
      border: none;
      outline: none;
  }
@@ -544,16 +534,55 @@
      text-align: center;
  }
  
+ .contact-map {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ 
  .gmap-form {
      display: flex;
-     width: 80%;
-     margin: auto;
-     margin-bottom: 20px;
+     align-items: center;
+     justify-content: center;
+     padding: 30px;
+     margin-left: 20px;
  }
  
  .gmap-form iframe {
-     flex-basis: 45%;
-     margin-top: 20px;
-     margin: 20px;
-     padding: 10px 20px;
+     padding: 40px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .footer {
+     display: flex;
+     width: 100%;
+     height: 30vh;
+     background-color: gray;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .footer h4 {
+     font-size: 24px;
+ }
+ 
+ .icon {
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: center;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ .icon img {
+     height: 20px;
+     width: 20px;
+     border-radius: 6px;
+     object-fit: contain;
  }
